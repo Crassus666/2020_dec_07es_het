@@ -12,17 +12,9 @@ namespace _2020_12_06_07
             p_szo += '~';
             while (betu != '~')
             {
-
-                //if (p_szo[k] != '~')
-                    //Console.Write( p_szo[k]);
-                
                 betu = p_szo[k];
                 k += 1;
-
             }
-
-
-
             return k-1;
         }
         static void Main(string[] args)
@@ -32,7 +24,7 @@ namespace _2020_12_06_07
             int eredmeny = 0;
             string vege = " ";
             string masikvege = " ";
-            int legkisebb = 100000;
+            int legkisebb = 10000000;
             
             int k = 0;
             string s = rs.ReadLine();
@@ -55,8 +47,8 @@ namespace _2020_12_06_07
                 }
             }
             
-            Console.Write(vege);
-            Console.Write(masikvege);
+            Console.Write("Leghosszabb szó {0}", vege);
+            Console.Write("Legrövidebb szó {0}", masikvege);
             rs.Close();
             fs.Close();
             Console.ReadKey();
