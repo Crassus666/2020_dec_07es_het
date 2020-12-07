@@ -17,17 +17,13 @@ namespace _2020_12_06_06
             string[] szamok = new string[db];
             s = rs.ReadLine();
             szamok[0] = s;
-            //s = rs.ReadLine();
             szamok[0] += '~';
 
             while (betu != '~')
             {
                 if (szamok[0][k] != 'a' && szamok[0][k] != '~')
                     Console.Write(" {0}", szamok[0][k]);
-                //if (szamok[0][k] != '~')
                 betu = szamok[0][k];
-                //Console.Write(betu);
-
                 k += 1;
             }
             rs.Close();
