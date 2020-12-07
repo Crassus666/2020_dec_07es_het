@@ -47,8 +47,8 @@ namespace _2020_12_06_07
                 }
             }
             
-            Console.Write("Leghosszabb szó {0}", vege);
-            Console.Write("Legrövidebb szó {0}", masikvege);
+            Console.Write("Leghosszabb szó: {0}", vege);
+            Console.Write("Legrövidebb szó: {0}", masikvege);
             rs.Close();
             fs.Close();
             Console.ReadKey();
